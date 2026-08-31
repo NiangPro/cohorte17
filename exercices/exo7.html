@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="">
+        <!-- premiere ligne -->
+        <tr>
+            <td rowspan="2" colspan="2" height="75">
+                <video src="../images/video1.mp4" muted autoplay loop height="75"></video>
+            </td>
+            <td colspan="3">
+                <img src="../images/bg.jpg" height="40" width="250" alt="">
+            </td>
+        </tr>
+        <!-- deuxieme ligne -->
+        <tr>
+            <td colspan="2" rowspan="2">
+                <video src="../images/video1.mp4" controls width="100" height="50"></video>
+            </td>
+            <td rowspan="3">
+                <ol type="I" start="4">
+                    <li>Langages</li>
+                        <ul type="square">
+                            <li>Python</li>
+                            <li>Perl</li>
+                                <ol start="10">
+                                    <li>Dart</li>
+                                </ol>
+                        </ul>
+                    <li>Framework</li>
+                        <ol type="a" start="2">
+                            <li>Flask</li>
+                        </ol>
+                </ol>
+            </td>
+        </tr>
+        <!-- troisieme ligne -->
+        <tr>
+            <td bgcolor="purple" colspan="2">Violet</td>
+        </tr>
+        <!-- quatrieme ligne -->
+        <tr>
+            <td rowspan="2" bgcolor="red">Rouge</td>
+            <td rowspan="2" colspan="2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7O5T5LFWZjN8EqdvnhAAMZCDy16pU2JPZT0J2Tm1gBQ&s=10" height="60" width="100" alt="">
+            </td>
+            <td bgcolor="blue">Bleu</td>
+        </tr>
+        <!-- cinquieme ligne -->
+        <tr>
+            <td bgcolor="green">Vert</td>
+            <td bgcolor="orange">Orange</td>
+        </tr>
+    </table>
+</body>
+</html>
