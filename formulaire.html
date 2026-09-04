@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <fieldset>
+        <legend align="center">Formulaire d'inscription</legend>
+
+
+        <form action="">
+            <label for="">Prenom</label>
+            <input type="text" required minlength="2" maxlength="10" 
+            placeholder="Veuillez saisir votre prenom"> <br>
+            <label for="">Prix</label>
+            <input type="number" step="0.01" min="0" value="0" max="10"><br>
+            <label for="">Sexe</label><br>
+            M <input type="radio" name="sexe">
+            F <input type="radio" name="sexe" checked> <br>
+
+            <label for="">Langues</label><br>
+            Fr <input type="checkbox">
+            En <input type="checkbox">
+            Es <input type="checkbox">
+            Wo <input type="checkbox" checked><br>
+            <label for="">Date de naissance</label>
+            <input type="date"><br>
+            <label for="">Heure de demarrage</label>
+            <input type="time"><br>
+            <label for="">Date & heure</label>
+            <input type="datetime-local"><br>
+            <label for="">Mois</label>
+            <input type="month"><br>
+            <label for="">Semaine</label>
+            <input type="week"><br>
+
+            <label for="">Pays</label>
+            <select name="" id="">
+                <option value="">Veuillez selectionner votre pays</option>
+                <option value="">Mali</option>
+                <option value="" selected>Senegal</option>
+                <option value="">Gambie</option>
+                <option value="">Maroc</option>
+            </select><br>
+            <label for="">Message</label><br>
+            <textarea name="" id="" rows="10" cols="50"></textarea> <br>
+            <label for="">Email</label>
+            <input type="email" name="" id=""><br>
+            <label for="">Mot de passe</label>
+            <input type="password"><br>
+            <label for="">Couleur</label>
+            <input type="color"><br>
+            <label for="">Image de profil</label>
+            <input type="file"><br>
+            <label for="">Plage</label>
+            <input type="range">
+            <br><input type="submit" value="S'inscrire">
+            <button type="reset">Annuler</button>
+        </form>
+    </fieldset>
+</body>
+</html>
