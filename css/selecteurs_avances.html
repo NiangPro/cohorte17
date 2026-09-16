@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #para1, #para4{
+            color: red;
+        }
+
+        div > p{
+            font-weight: bold;
+            font-size: 43px;
+        }
+
+        div + p{
+            font-family: algerian;
+            text-decoration: line-through;
+            font-size: 32px;
+        }
+
+        input[type="email"], input[type="password"]{
+            width: 400px;
+            outline: none;
+        }
+
+        input[type="submit"]{
+            background: green;
+            color: white;
+            transition: 6s;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover{
+            background: red;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="para1">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, provident.
+        </p>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea veniam laboriosam asperiores nihil voluptates nisi sequi reprehenderit, ducimus excepturi voluptatem nemo, sunt doloribus ex laudantium repudiandae quo fugit omnis similique.
+    </p>
+    <p id="para4">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <form action="">
+        <label for="">Email</label><br>
+        <input type="email" name="" id=""><br>
+        <label for="">Mot de passe</label><br>
+        <input type="password"><br>
+        <input type="submit" value="Se connecter">
+    </form>
+</body>
+</html>
