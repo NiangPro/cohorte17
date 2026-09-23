@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 20px;
+            background: rgb(244, 241, 241);
+            font-family: sans-serif;
+        }
+        header{
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px;
+            border-radius: 10px;
+        }
+
+        .logo{
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        nav ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-between;
+            width: 300px;            
+        }
+
+        nav li a{
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        #bio{
+            margin-top: 50px;
+        }
+
+        #bio h1{
+            text-align: center;
+        }
+
+        .carte-produits{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .produit{
+            background: white;
+            width: 200px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 2px rgb(192, 189, 189);
+            box-sizing: border-box;
+        }
+
+        /* debut grid css  */
+        .grille{
+            background: white;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 1px 1px 3px grey;
+        }
+
+        .grids{
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .deux{
+            grid-column: span 2;
+        }
+        .trois{
+            /* grid-column: span 3; */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Boutique Bio Fatou</div>
+        <nav>
+            <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Produits</a></li>
+                <li><a href="">A propos</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="bio">
+        <h1>Nos produits -- Flexbox</h1>
+        <div class="carte-produits">
+            <div class="produit">
+                <h2>Miel naturel</h2>
+                <p>Prix: 5 000 FCFA</p>
+            </div>
+            <div class="produit">
+                <h2>Huile d'olive</h2>
+                <p>Prix: 7 500 FCFA</p>
+            </div>
+            <div class="produit">
+                <h2>Jus de Bissap</h2>
+                <p>Prix: 2 500 FCFA</p>
+            </div>
+            <div class="produit">
+                <h2>Beurre de karite</h2>
+                <p>Prix: 4 000 FCFA</p>
+            </div>
+            <div class="produit">
+                <h2>The naturel</h2>
+                <p>Prix: 3 000 FCFA</p>
+            </div>
+            <div class="produit">
+                <h2>Confiture de mangue</h2>
+                <p>Prix: 3 500 FCFA</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="bio-grid">
+        <h1>Nos produits -- CSS Grid</h1>
+        <div class="grids">
+            <div class="grille">
+                <h2>Miel naturel</h2>
+                <p>Prix: 5 000 FCFA</p>
+            </div>
+            <div class="grille deux">
+                <h2>Huile d'olive</h2>
+                <p>Prix: 7 500 FCFA</p>
+            </div>
+            <div class="grille trois">
+                <h2>Jus de Bissap</h2>
+                <p>Prix: 2 500 FCFA</p>
+            </div>
+            <div class="grille">
+                <h2>Beurre de karite</h2>
+                <p>Prix: 4 000 FCFA</p>
+            </div>
+            <div class="grille">
+                <h2>The naturel</h2>
+                <p>Prix: 3 000 FCFA</p>
+            </div>
+       
+        </div>
+    </section>
+</body>
+</html>
