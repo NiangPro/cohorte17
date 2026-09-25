@@ -1,0 +1,161 @@
+body{
+    margin: 0px;
+    box-sizing: border-box;
+}
+nav{
+    height: 50px;
+    background: purple;
+    color: yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    box-shadow: 1px 1px 10px yellow;
+    position: fixed;
+    top: 0px;
+    width: 85%;
+}
+
+.logo{
+    text-decoration: none;
+    color: yellow;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 35px;
+}
+
+.menu{
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li{
+    width: 120px;
+}
+
+.menu a{
+    color: rgb(255, 255, 204);
+    font-size: 24px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000;
+    transition: all 3s ease-in;
+
+}
+
+.menu li:hover a{
+    color: rgb(219, 219, 2);
+}
+
+.menuMobile{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+
+.bar{
+    width: 30px;
+    height: 4px;
+    background: yellow;
+    cursor: pointer;
+
+}
+
+.toggleBtn{
+    display: none;
+}
+
+#accueil{
+    border: 1px solid #000;
+    padding: 100px 100px;
+    text-align: center;
+    /* background: #a7bc25; 
+    background: rgb(23, 129, 178);
+    background: rgba(23, 129, 178, .4);
+    background: radial-gradient(purple, yellow, green);
+    background: linear-gradient(to right, purple, yellow);*/
+    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.4)), url(../../images/bg.jpg);
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+#accueil h1{
+    font-size: 55px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: purple;
+    text-shadow: 2px 2px 2px yellow;
+    font-family:  Tahoma, sans-serif;
+}
+
+#accueil p{
+    font-size: 24px;
+    color: #ffffff;
+}
+
+#accueil a{
+    text-decoration: none;
+    background: yellow;
+    color: purple;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 24px;
+    box-shadow: 1px 1px 1px purple;
+    transition: 2s;
+}
+
+#accueil a:hover{
+     background: purple;
+    color: yellow;
+        box-shadow: 1px 1px 1px yellow;
+}
+
+@media (max-width: 605px){
+    nav{
+        padding: 0px 30px;
+    }
+    .menu{
+        display: none;
+    }
+
+    .menuMobile{
+        display: flex;
+
+    }
+
+    .toggleBtn:checked ~ .menuMobile .bar:nth-child(1){
+        transform: translateY(8px) rotate(-45deg);
+    }
+
+    .toggleBtn:checked ~ .menuMobile .bar:nth-child(3){
+        transform: translateY(-8px) rotate(45deg);
+    }
+
+    .toggleBtn:checked ~ .menuMobile .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .toggleBtn:checked ~ .menu{
+        transition: 3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        background: purple;
+        width: 100%;
+        align-items: center;
+        row-gap: 20px;
+        padding: 50px 0px;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    #accueil h1{
+        font-size: 20px;
+    }
+}
